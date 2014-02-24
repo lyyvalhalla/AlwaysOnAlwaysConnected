@@ -1,4 +1,0 @@
-AlwaysOnAlwaysConnected
-=======================
-
-android
