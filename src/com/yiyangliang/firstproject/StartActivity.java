@@ -55,14 +55,13 @@ public class StartActivity extends Activity {
 
 					@Override
 					public void onClick(View arg0) {
+						Log.v("StartActivity", "Buttom Clicked");
 						
+						Intent i = new Intent(StartActivity.this, MediaStoreGallery.class);
 						
 					}
 					
-				}
-				
-				
-				);
+				});
 		
 		myCameraImage = (ImageButton) findViewById(R.id.imageButton4);
 		myCameraImage.setOnClickListener(
@@ -71,13 +70,12 @@ public class StartActivity extends Activity {
 					public void onClick(View arg4) {
 						Log.v("StartActvity", "Buttom Clicked");
 						
-						Intent i = new Intent(StartActivity.this, CameraActivity.class);
+						Intent i = new Intent(StartActivity.this, MediaStoreCameraIntent.class);
 						startActivity(i);
 						
 						
 						
 					}
-					
 					
 		});
 		
