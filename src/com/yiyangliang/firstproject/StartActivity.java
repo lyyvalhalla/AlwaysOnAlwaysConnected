@@ -41,7 +41,10 @@ public class StartActivity extends Activity {
 
 					@Override
 					public void onClick(View arg0) {
+						Log.v("StartActivity", "Buttom Clicked");
 						
+						Intent i = new Intent(StartActivity.this, MediaStoreGallery.class);
+						startActivity(i);
 					}
 				
 				}
@@ -57,7 +60,8 @@ public class StartActivity extends Activity {
 					public void onClick(View arg0) {
 						Log.v("StartActivity", "Buttom Clicked");
 						
-						Intent i = new Intent(StartActivity.this, MediaStoreGallery.class);
+						Intent i = new Intent(StartActivity.this, GridViewActivity.class);
+						startActivity(i);
 						
 					}
 					
@@ -75,12 +79,8 @@ public class StartActivity extends Activity {
 						
 						
 						
-					}
-					
-		});
-		
-		
-		
+					}				
+		});	
 	}
 	
 

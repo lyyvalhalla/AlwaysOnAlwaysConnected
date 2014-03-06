@@ -125,8 +125,9 @@ public class MediaStoreCameraIntent extends Activity {
 			descriptionEditText.setVisibility(View.VISIBLE);
 			
 			// scale the image
-			int dw = 200;
-			int dh = 200;
+			Display currentDisplay = getWindowManager().getDefaultDisplay();
+			int dw = currentDisplay.getWidth();
+			int dh = currentDisplay.getHeight();
 			
 			try {
 				// load up the img's dimensions not the image itself
@@ -134,8 +135,8 @@ public class MediaStoreCameraIntent extends Activity {
 				bmpFactoryOptions.inJustDecodeBounds = true;
 				Bitmap bmp = BitmapFactory.decodeStream(getContentResolver().openInputStream(imageFileUri), null, bmpFactoryOptions);
 				
-				int heightRatio = (int)Math.ceil(bmpFactoryOptions.outHeight/(float)dh);
-				int widthRatio = (int)Math.ceil(bmpFactoryOptions.outWidth/(float)dw);
+				int heightRatio = (int)Math.floor(bmpFactoryOptions.outHeight/(float)dh);
+				int widthRatio = (int)Math.floor(bmpFactoryOptions.outWidth/(float)dw);
 				
 				Log.v("HEIGHTRATIO", ""+heightRatio);
 				Log.v("WIDTHRATIO",""+widthRatio);

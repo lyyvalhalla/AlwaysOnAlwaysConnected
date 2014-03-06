@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="19" />
 
     <uses-feature
@@ -14,6 +14,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -35,7 +36,18 @@
             android:name="com.yiyangliang.firstproject.MediaStoreGallery"
             android:label="@string/title_activity_media_store_gallery" >
         </activity>
- 
+        <activity
+            android:name="com.yiyangliang.firstproject.GridViewActivity"
+            android:label="@string/title_activity_grid_view" >
+        </activity>
+        <activity
+            android:name="com.yiyangliang.firstproject.FullScreenViewActivity"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.yiyangliang.firstproject.TouchEvent"
+            android:label="@string/title_activity_touch_event" >
+        </activity>
     </application>
 
 </manifest>

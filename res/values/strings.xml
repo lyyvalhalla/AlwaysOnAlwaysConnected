@@ -6,5 +6,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_camera">CameraActivity</string>
     <string name="title_activity_media_store_gallery">MediaStoreGallery</string>
+    <string name="title_activity_grid_view">GridViewActivity</string>
+    <string name="title_activity_touch_event">TouchEvent</string>
 
 </resources>
