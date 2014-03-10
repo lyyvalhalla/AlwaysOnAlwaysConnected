@@ -8,6 +8,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.MotionEvent;
@@ -37,6 +38,7 @@ public class FullScreenViewActivity extends Activity {
 
 		Intent i = getIntent();
 		int position = i.getIntExtra("position", 0);
+		Uri imageFileUri = i.getData();
 
 		adapter = new FullScreenImageAdapter(FullScreenViewActivity.this,
 				utils.getFilePaths());

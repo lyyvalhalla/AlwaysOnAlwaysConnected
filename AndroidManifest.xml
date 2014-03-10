@@ -45,8 +45,8 @@
             android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
         <activity
-            android:name="com.yiyangliang.firstproject.TouchEvent"
-            android:label="@string/title_activity_touch_event" >
+            android:name="com.yiyangliang.firstproject.TouchEdit"
+            android:label="@string/title_activity_touch_edit" >
         </activity>
     </application>
 
