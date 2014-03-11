@@ -49,9 +49,6 @@ public class FullScreenImageAdapter extends PagerAdapter implements OnTouchListe
     Bitmap bitmap;
     Bitmap atleredBitmap;
     
-    float downx = 0;
-    float downy = 0;
-   
     
 	public FullScreenImageAdapter(Activity activity, ArrayList<String> imagePaths) {
 		this._activity = activity;
@@ -107,8 +104,9 @@ public class FullScreenImageAdapter extends PagerAdapter implements OnTouchListe
 				Intent i = new Intent(_activity, TouchEdit.class);
 				i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				i.putExtra("images_passed", bitmap);
-				_activity.startActivity(i);
 				
+				_activity.startActivity(i);
+//				Log.v("bitmap.getWidth()", "the ");
 			}
 		});
         

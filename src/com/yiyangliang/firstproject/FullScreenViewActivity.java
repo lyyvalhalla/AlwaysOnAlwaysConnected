@@ -48,19 +48,7 @@ public class FullScreenViewActivity extends Activity {
 		// displaying selected image first
 		viewPager.setCurrentItem(position);
 		
-		// click to edit
-//		
-//		btnEdit = (Button) findViewById(R.id.btnEdit);
-//		btnEdit.setOnClickListener(
-//				new OnClickListener() {
-//        			@Override
-//					public void onClick(View arg0) {
-//        				Intent i = new Intent(FullScreenViewActivity.this, TouchEvent.class);
-//						startActivity(i);
-//        			}
-//				}
-//				
-//				);
+
 	}
 
 	public boolean onTouch(View arg0, MotionEvent arg1) {
